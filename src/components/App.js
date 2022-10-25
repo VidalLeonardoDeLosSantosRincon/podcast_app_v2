@@ -3,10 +3,12 @@ import './App.css';
 
 import { Layout } from './main/layout';
 
-export const App = () => {
+export const App = ({children}) => {
     return (
         <div className="App">
-              <Layout/>
+            <Layout>
+                {children}
+            </Layout>
         </div>
     );
 }
