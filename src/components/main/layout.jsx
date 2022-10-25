@@ -16,7 +16,8 @@ export const Layout = ({children}) => {
                 .ctr-layout {
                     background-color:none;
                     width:100%;
-                    height:100vh;
+                    min-height:100vh;
+                    overflox-y:scroll;
                     padding:10px 25px;
                 }    
                 
