@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 
-import audioIcon from '../../images/audio.png'
+import audioIcon from '../../images/logo1.png'
 
 export const Header = () => {
     return (
@@ -29,7 +29,7 @@ export const Header = () => {
                     display:flex;
                     justify-content:flex-start;
                     align-items:center;
-                    gap:4px 8px;
+                    gap:4px 2px;
                 }
 
                 .ctr-header header .title {
@@ -48,8 +48,8 @@ export const Header = () => {
                 }
 
                 .ctr-header header img {
-                    height:50px;
-                    filter: drop-shadow(4px 4px 10px black);
+                    height:40px;
+                    filter: drop-shadow(2px 2px 15px black);
                 }
             `}</style>
         </Fragment>
