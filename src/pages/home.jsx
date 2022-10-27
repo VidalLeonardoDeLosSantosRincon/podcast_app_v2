@@ -1,9 +1,13 @@
 import React, {Fragment} from "react";
+
+//components
+import { RecommendedChannels } from "../components/channels/recommended";
+
 export const Home = () => {
     return(
         <Fragment>
             <div className="ctr-home">
-                Home Page
+                <RecommendedChannels/>
             </div>
             <style>{`
                 .ctr-home {
