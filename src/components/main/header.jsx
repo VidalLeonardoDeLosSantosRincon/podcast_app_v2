@@ -15,10 +15,14 @@ export const Header = () => {
             </div>  
             <style>{`
                 .ctr-header {
-                    min-height:60px;
                     background-color:#273746;
                     color:white;
+                    height:70px;
+                    width:100%;
+                    position:fixed;
                     padding:10px 25px;
+                    margin-top:-70px;
+                    z-index:100000;
 
                     display:flex;
                     justify-content:flex-start;

@@ -19,6 +19,7 @@ export const Layout = ({children}) => {
                     min-height:100vh;
                     overflox-y:scroll;
                     padding:0px;
+                    margin-top:70px;
                 }    
             `}</style>
         </Fragment> 
