@@ -3,11 +3,13 @@ import { useParams } from 'react-router';
 
 //requests
 import { getChannel } from '../requests/channels/get_channel';
+import { getChannelAudioClips } from '../requests/channels/get_channels_audio_clips';
 
 export const Channel = () => {
 
-    const {id} =  useParams(0);
+    const {id} = useParams();
     const [currentChannel, setCurrentChannel] = useState(null);
+    const [currentChannelAudioClips, setCurrentChannelAudioClips] = useState(null);
     const [showFullDescription, setShowFullDescription] = useState(false);
    
     const getCurrentChannel =  async (channel_id = 0) => {
@@ -33,6 +35,11 @@ export const Channel = () => {
         setCurrentChannel(newChannel);
     };
 
+    const getCurrentChannelAudioClips = async (channel_id = 0) => {
+        const channel_audios = await getChannelAudioClips(channel_id);
+        setCurrentChannelAudioClips(channel_audios);
+    };
+
     const resumeText = (text = '', limit = 150) => {
         let str = '';
         let show = false;
@@ -53,6 +60,7 @@ export const Channel = () => {
 
     useEffect(() => {
         getCurrentChannel(id);
+        getCurrentChannelAudioClips(id);
     }, [id]);
 
 
