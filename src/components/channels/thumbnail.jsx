@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import { Link } from 'react-router-dom';
 
 export const Thumbnail = ({channel}) => {
     const {
@@ -8,15 +9,19 @@ export const Thumbnail = ({channel}) => {
 
     return ( 
         <Fragment>
-            <div className="ctr-thumbnail">
-                <div className="card-box" style={{backgroundImage:`url(${logo})`}}>
-                    <div className="info-box">
-                            <h4 className='sub-title'>{title}</h4>
+            
+                <div className="ctr-thumbnail">
+                    <div className="card-box" style={{backgroundImage:`url(${logo})`}}>
+                        <div className="info-box">
+                            <h4 className='sub-title'>
+                                <Link to={`/channel/${id}`}>{title}</Link>
+                            </h4>
                             <p className="description">{description}</p>
+                        </div>
+                        <h4 className='title'>{title}</h4>
                     </div>
-                    <h4 className='title'>{title}</h4>
                 </div>
-            </div>
+           
             <style>{`
                 .ctr-thumbnail {
                     background-color:#2C3E50;
@@ -62,6 +67,11 @@ export const Thumbnail = ({channel}) => {
                 .ctr-thumbnail > .card-box > .info-box .sub-title {
                     font-size:22px;
                     margin:5px 0;
+                    
+                }
+
+                .ctr-thumbnail > .card-box > .info-box .sub-title a {
+                    color:white;
                 }
 
                 .ctr-thumbnail > .card-box > .info-box .description {
