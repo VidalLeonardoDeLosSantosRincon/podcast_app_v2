@@ -72,7 +72,7 @@ export const Channel = () => {
     
     const description = resumeText(currentChannel.description);
 
-    const dataContext = Object.freeze({ channel: currentChannel, audio_clips : currentChannelAudioClips });
+    const dataContext = Object.freeze({ currentChannel, audio_clips : currentChannelAudioClips });
 
     return (
         <ChannelContext.Provider value={{...dataContext}}>
