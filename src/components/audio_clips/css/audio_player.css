@@ -1,0 +1,75 @@
+.ctr-audio-player {
+    background-color:none;
+    width:100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.ctr-audio-player marquee {
+    background-color:#34495E ;
+    color:white;
+    margin:0;
+    padding:10px;
+    margin-bottom: -26px;
+    
+}
+
+/*player styles*/
+audio {
+    width:100%;
+    height:80px;
+    margin:0;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border-radius: 0px;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #34495E ;
+    width:500px;
+    padding:20px 10px;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: white;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  background-color: rgba(177,212,224, .7);
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: white;
+    font-size:16px;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    color: white;
+    font-size:16px;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: white;
+    border-radius: 50px;
+    padding:2px 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: white;
+  border-radius: 25px;
+  padding:2px 5px;
+  margin:auto 0;
+}
+
+
