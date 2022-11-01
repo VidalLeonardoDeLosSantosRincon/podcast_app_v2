@@ -1,0 +1,145 @@
+.ctr-audio-clips {
+    background-color:white;
+    min-height:200px;
+    width:80%;
+    padding:30px 20px;
+    margin:0 auto;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+}
+
+.ctr-audio-clips .title {
+    font-size:20px;
+    font-weight:300;
+    margin:5px 0;
+}
+
+.ctr-audio-clips .audio-clips {
+    background-color:white;
+    padding:10px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:10px;
+}
+
+.ctr-audio-clips .audio-clips .current-clip {
+    background-color: rgba(0, 0, 0, 0.1);
+    min-width:450px;
+    height:450px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap:5px;
+}
+
+.ctr-audio-clips .audio-clips .clips-list {
+    background-color: rgba(0, 0, 0, 0.01);
+    max-height:450px;
+    width:100%;
+    overflow-y: scroll;
+    padding:15px 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1) inset;
+    border-top:4px solid lightskyblue;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:10px;
+}
+
+.ctr-audio-clips .audio-clips .clips-list .ctr-clip {
+    background-color:white;
+    width:100%;
+    padding:15px 20px;
+    border:0.5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:5px;
+}
+
+.ctr-audio-clips .audio-clips .clips-list .ctr-clip:hover {
+    transform: scale(1.01);
+    transition: all 0.2s linear;
+}
+
+.ctr-audio-clips .audio-clips .clips-list .ctr-clip .audio-icon {
+    height:50px;
+}
+
+.ctr-audio-clips .audio-clips .clips-list .ctr-clip .info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:5px;
+}
+
+.ctr-audio-clips .audio-clips .clips-list .ctr-clip .info-box .title {
+    font-size:18px;
+    font-weight: bold;
+    text-align: left;
+    margin:0;
+    padding:0;
+}
+
+.ctr-audio-clips .audio-clips .clips-list .ctr-clip .info-box .duration {
+    background-color:rgba(0, 0, 0, 0.1);
+    color:gray;
+    font-size:12px;
+    padding:2px 10px;
+    border-radius:50px;
+    margin:0 5px;
+}
+.ctr-audio-clips .audio-clips .clips-list .ctr-clip .info-box .sub-title {
+    font-size:14px;
+    font-weight: 300;
+    text-align: left;
+    margin:0;
+    padding:0;
+}
+
+.ctr-audio-clips .audio-clips .clips-list .ctr-clip .info-box .description {
+    background-color: rgba(0, 0, 0, 0.04);
+    font-size: 12px;
+    text-align: left;
+    margin:5px 0;
+    padding:5px 10px;
+    border-radius: 5px;
+}
+
+.ctr-audio-clips .audio-clips .clips-list .ctr-clip .info-box .episode {
+    background-color:lightskyblue;
+    color:white;
+    font-size:12px;
+    padding:2px 15px;
+    border-radius:50px;
+    margin:0 5px;
+}
+
+.ctr-audio-clips .audio-clips .clips-list .ctr-clip .info-box .plays {
+    background-color:orange;
+    color:white;
+    font-size:12px;
+    padding:2px 15px;
+    border-radius:50px;
+    margin:0 5px;
+}
+
+
+
+
