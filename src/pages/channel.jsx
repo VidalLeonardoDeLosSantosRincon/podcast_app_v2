@@ -11,6 +11,9 @@ import { ChannelContext } from '../contexts/channels/channelContext';
 import { getChannel } from '../requests/channels/get_channel';
 import { getChannelAudioClips } from '../requests/channels/get_channels_audio_clips';
 
+//components
+import { ChannelAudioClips } from '../components/channels/audio_clips';
+
 export const Channel = () => {
 
     const {id} = useParams();
@@ -114,7 +117,8 @@ export const Channel = () => {
                                 }
                             </p>
                         </div>
-                    </div>
+                    </div>  
+                    <ChannelAudioClips/>    
                 </div>
             </Fragment>
         </ChannelContext.Provider>
