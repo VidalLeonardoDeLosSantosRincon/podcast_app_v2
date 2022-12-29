@@ -11,17 +11,23 @@ import {App} from '../components/App';
 import { Home } from "../pages/home";
 import { Channel } from "../pages/channel";
 
+//configuring store
+import {Store} from "../store/store";
+import {Provider} from "react-redux";
+
 export const AppRoutes = () => {
     return(
-        <Router>
-            <App>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/home" element={<Home/>}/>
-                    <Route path="/channels/" element={<Home/>}/>
-                    <Route path="/channel/:id" element={<Channel/>}/>
-                </Routes>
-            </App>
-        </Router>
+            <Router>
+                <Provider store={Store}>
+                    <App>
+                        <Routes>
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/home" element={<Home/>}/>
+                            <Route path="/channels/" element={<Home/>}/>
+                            <Route path="/channel/:id" element={<Channel/>}/>
+                        </Routes>
+                    </App>
+                </Provider>
+            </Router>
     );
 };
