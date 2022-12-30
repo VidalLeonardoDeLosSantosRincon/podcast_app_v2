@@ -20,6 +20,7 @@ export const Layout = ({children}) => {
                     overflox-y:scroll;
                     padding:0px;
                     margin-top:70px;
+                    box-shadow:0px 0px 80px rgba(0, 0, 0, 1) inset;
                 }    
             `}</style>
         </Fragment> 
