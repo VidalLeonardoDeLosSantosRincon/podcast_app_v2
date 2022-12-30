@@ -14,6 +14,7 @@ export const Footer = () => {
                     background-color:#1C2833;
                     color:white;
                     padding:10px 25px;
+                    border-top:0.5px solid dodgerblue;
 
                     display:flex;
                     justify-content:flex-start;
