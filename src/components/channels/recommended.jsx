@@ -51,6 +51,7 @@ export const RecommendedChannels = () => {
                 .ctr-recommended {
                     background-color:none;
                     padding:5px;
+                    padding-bottom:50px;
                 }
 
                 .ctr-recommended > .title {
