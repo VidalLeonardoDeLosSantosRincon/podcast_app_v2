@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-    dakrmode : {
+    darkmode : {
         status : false,
         theme : {
             colors: {
@@ -20,5 +20,14 @@ const INITIAL_STATE = {
 
 export const AppReducer = (state = INITIAL_STATE, action ) => {
     const {type, payload} = action;
-    return state;
+    switch(type) {
+        case "SET_DARK_MODE": 
+            const {darkmode} = state;
+            const {status} = payload;
+            darkmode.status = (typeof status == 'boolean')? status : false;
+            state = {...state, darkmode};
+            return state;
+        default:
+            return state;
+    }
 };
